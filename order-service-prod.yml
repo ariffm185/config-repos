@@ -1,0 +1,18 @@
+global:
+  message: Welcome to order-service from prod!
+server:
+  port: 8082
+  message: hello from orderservice in prod!
+spring:
+  datasource:
+    url: jdbc:h2:mem:order_prod
+    username: root
+    password: 1080
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    database-platform: org.hibernate.dialect.H2Dialect
+    
